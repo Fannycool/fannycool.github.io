@@ -33,8 +33,9 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
   display: block;
 }
 .tool-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.1); }
-.tool-card .icon { font-size: 28px; margin-bottom: 8px; }
-.tool-card h2 { font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+.tool-card .card-title { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.tool-card .icon { font-size: 28px; flex-shrink: 0; }
+.tool-card h2 { font-size: 18px; font-weight: 600; }
 .tool-card p { font-size: 14px; color: var(--text-secondary); }
 .tool-card .tag {
   display: inline-block; margin-top: 10px;
@@ -61,29 +62,25 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
 
 <div class="tools">
   <a href="https://fannycool.github.io/freelance-rate-calculator/" class="tool-card">
-    <div class="icon">💼</div>
-    <h2>自由职业时薪计算器</h2>
+    <div class="card-title"><div class="icon">💼</div><h2>自由职业时薪计算器</h2></div>
     <p>计算自由职业该收多少时薪。含税费、假期、运营成本和不可计费时间。</p>
     <span class="tag">新增</span>
   </a>
 
   <a href="https://fannycool.github.io/moving-cost-calculator/" class="tool-card">
-    <div class="icon">🚚</div>
-    <h2>搬家成本估算器</h2>
+    <div class="card-title"><div class="icon">🚚</div><h2>搬家成本估算器</h2></div>
     <p>对比全服务搬家、卡车租赁和移动集装箱。按房屋大小和距离估算。</p>
     <span class="tag">新增</span>
   </a>
 
   <a href="https://fannycool.github.io/overtime-calculator/" class="tool-card">
-    <div class="icon">💰</div>
-    <h2>加班工资计算器</h2>
+    <div class="card-title"><div class="icon">💰</div><h2>加班工资计算器</h2></div>
     <p>计算含加班费的税前收入。支持各州加班法规、1.5倍/2倍加班费。</p>
     <span class="tag">收入</span>
   </a>
 
   <a href="https://fannycool.github.io/injection-calculator/zh.html" class="tool-card">
-    <div class="icon">💉</div>
-    <h2>PinPlan — 注射日程计算器</h2>
+    <div class="card-title"><div class="icon">💉</div><h2>PinPlan — 注射日程计算器</h2></div>
     <p>自动生成注射日历，避开公休日。适合需定期去医院注射的慢性病患者。</p>
     <span class="tag">健康</span>
   </a>

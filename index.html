@@ -34,8 +34,9 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
   display: block;
 }
 .tool-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.1); }
-.tool-card .icon { font-size: 28px; margin-bottom: 8px; }
-.tool-card h2 { font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+.tool-card .card-title { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.tool-card .icon { font-size: 28px; flex-shrink: 0; }
+.tool-card h2 { font-size: 18px; font-weight: 600; }
 .tool-card p { font-size: 14px; color: var(--text-secondary); }
 .tool-card .tag {
   display: inline-block; margin-top: 10px;
@@ -62,28 +63,24 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
 
 <div class="tools">
   <a href="https://fannycool.github.io/freelance-rate-calculator/" class="tool-card">
-    <div class="icon">💼</div>
-    <h2>Freelance Rate Calculator</h2>
+    <div class="card-title"><div class="icon">💼</div><h2>Freelance Rate Calculator</h2></div>
     <p>Calculate the hourly rate you need. Accounts for taxes, time off, expenses, and non-billable hours.</p>
     <span class="tag">New</span>
   </a>
 
   <a href="https://fannycool.github.io/moving-cost-calculator/" class="tool-card">
-    <div class="icon">🚚</div>
-    <h2>Moving Cost Estimator</h2>
+    <div class="card-title"><div class="icon">🚚</div><h2>Moving Cost Estimator</h2></div>
     <p>Compare full-service movers, truck rental, and moving containers. Estimates by home size and distance.</p>
     <span class="tag">New</span>
   </a>
 
   <a href="https://fannycool.github.io/overtime-calculator/" class="tool-card">
-    <div class="icon">💰</div>
-    <h2>Overtime Pay Calculator</h2>
+    <div class="card-title"><div class="icon">💰</div><h2>Overtime Pay Calculator</h2></div>
     <p>Calculate your paycheck with overtime. State-specific rules, time-and-a-half, double time.</p>
   </a>
 
   <a href="https://fannycool.github.io/injection-calculator/" class="tool-card">
-    <div class="icon">💉</div>
-    <h2>PinPlan — Injection Schedule Calculator</h2>
+    <div class="card-title"><div class="icon">💉</div><h2>PinPlan — Injection Schedule Calculator</h2></div>
     <p>Plan injection schedules automatically. Skip rest days, generate full treatment calendar.</p>
     <span class="tag">Health</span>
   </a>
